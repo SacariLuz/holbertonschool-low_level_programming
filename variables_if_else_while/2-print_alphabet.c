@@ -1,14 +1,18 @@
 #include <stdio.h>
 /**
-  * main - Entry point
-  *
-  * Return: Always 0
-  */
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
+ */
 int main(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-putchar(letter);
-putchar('\n');
-return (0);
+	int c;
+	int LF = 10;
+
+	for (c = 97; c <= 122; c++)
+		putchar(c);
+	putchar(LF);
+	getchar();
+	return (0);
 }
