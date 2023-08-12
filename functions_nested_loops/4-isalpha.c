@@ -14,10 +14,10 @@ int _isalpha(int c)
 	int alpha_is = 0;
 
 	result = isalpha(c);
-	
+
 	if (result != 0)
 		alpha_is = 1;
-	
+
 	return (alpha_is);
 
 }
