@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "m.h"
 
 /**
@@ -5,6 +7,7 @@
  *
  * Return: Always
  */
+
 int main(void)
 {
 	print_school();
