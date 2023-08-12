@@ -22,3 +22,4 @@ Returns 1 if c is a letter, lowercase or uppercase
 Returns 0 otherwise
 FYI: The standard library provides a similar function: isalpha. Run man isalpha to learn more.
 
+5. Write a function that prints the sign of a number.
