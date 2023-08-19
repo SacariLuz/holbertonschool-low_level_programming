@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts_half - prints every other character of a string
+ * puts_half - prints half of string
  * @str: sttring character
  *
  * Return: void
@@ -10,24 +10,26 @@
 
 void puts_half(char *str)
 {
-	int len;
-	int i;
-	int n;
-	const int LF = 10;
+	long len, start;
+	const int NEW_LINE = 10;
 
 	len = strlen(str);
 
-	if ((len % 2) == 0)
+	if (len != 0)
 	{
-		n = len / 2;
+		if (len % 2 == 0)
+			start = len / 2;
+		else
+			start = ((len - 1) / 2) + 1;
+
+		len--;
+
+		while (start <= len)
+		{
+			putchar(str[start]);
+			start++;
+		}
 	}
-	else
-	{
-		n = (len - 1) / 2;
-	}
-	for (i = n; i < len; i++)
-	{
-		putchar(str[i]);
-	}
-	putchar(LF);
+	putchar(NEW_LINE);
+
 }
