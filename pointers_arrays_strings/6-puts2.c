@@ -1,28 +1,32 @@
 #include <string.h>
 #include <stdio.h>
 
+/**
+ * puts2 - prints every other character of a string
+ * @str: starting first character
+ *
+ * Return: void
+ */
+
 void puts2(char *str)
 {
-
-int len;
-int i;
+	int len;
+	int i = 1;
+	const int LF = 10;
 
 	len = strlen(str);
-	putchar(str[0]);
-	len--;
-	for(i = 1; i <= len; i++)
+
+	if (i != 0)
 	{
-	if (i % 2 == 0)
-	{
-	putchar(str[i]);
-	{
+		len--;
+		putchar(str[0]);
+
+		while (i <= len)
+		{
+			if (i % 2 == 0)
+				putchar(str[i]);
+			i++;
+		}
 	}
-	putchar(10);
-	}
-	int main(void)
-	{
-	char *str;
-	str = "0123456789";
-	puts2(str);
-	return (0);
+	putchar(LF);
 }
