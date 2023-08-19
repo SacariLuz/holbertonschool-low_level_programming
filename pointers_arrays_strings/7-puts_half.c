@@ -13,6 +13,7 @@ void puts_half(char *str)
 	int len;
 	int i;
 	int n;
+	const int LF = 10;
 
 	len = strlen(str);
 
@@ -28,5 +29,5 @@ void puts_half(char *str)
 	{
 		putchar(str[i]);
 	}
-	putchar(10);
+	putchar(LF);
 }
