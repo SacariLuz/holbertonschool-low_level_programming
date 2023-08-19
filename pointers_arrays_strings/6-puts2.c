@@ -16,7 +16,7 @@ void puts2(char *str)
 
 	len = strlen(str);
 
-	if (i != 0)
+	if (len != 0)
 	{
 		len--;
 		putchar(str[0]);
