@@ -6,8 +6,12 @@
  *
  * Return:of 0 is a digit and 0 otherwise
  */
+
 int _isdigit(int c)
 {
-
-	return (c = 49 && c <= 57);
+	if
+		(c >= '0' && c <= '9')
+		return (1);
+	else 
+		return (0);
 }
