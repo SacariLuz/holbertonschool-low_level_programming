@@ -8,7 +8,7 @@
 
 void print_numbers(void)
 {
-	void _putchar( int);
+	void _putchar(int);
 
 	int i;
 
