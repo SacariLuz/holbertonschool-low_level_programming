@@ -1,9 +1,17 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * create_array - create an array of size 
+ * @size: size of array
+ * @c: asing 
+ *
+ * Return: array NULL 
+ */
+
 char *create_array(unsigned int size, char c)
 {
-	char* ptr;
+	char *ptr;
 	unsigned int conter;
 
 	if (size == 0)
