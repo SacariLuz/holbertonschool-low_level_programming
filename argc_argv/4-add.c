@@ -4,8 +4,8 @@
 /**
  * main - Prints the addition of positive numbers,
  *        followed by a new line.
- * @argc: The number of argumentsw 
- * @argv: An array of pointers to the arguments.
+ * @argc: The number of argumentsw
+ * @argv: An array of pointers to :the arguments.
  *
  * Return: If one of the numbers contains symbols that are non-digits - 1.
  *         Otherwise - 0.
